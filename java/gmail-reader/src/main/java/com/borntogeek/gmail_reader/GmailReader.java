@@ -59,12 +59,12 @@ public class GmailReader {
 
 	private static Properties getImapProperties() {
 		Properties props = new Properties();
-		props.put("mail.imap.host", "imap.gmail.com");
-		props.put("mail.imap.ssl.trust", "imap.gmail.com");
-		props.put("mail.imap.port", "993");
-		props.put("mail.imap.starttls.enable", "true");
-		props.put("mail.imap.connectiontimeout", "10000");
-		props.put("mail.imap.timeout", "10000");
+		props.put("mail.imaps.host", "imap.gmail.com");
+		props.put("mail.imaps.ssl.trust", "imap.gmail.com");
+		props.put("mail.imaps.port", "993");
+		props.put("mail.imaps.starttls.enable", "true");
+		props.put("mail.imaps.connectiontimeout", "10000");
+		props.put("mail.imaps.timeout", "10000");
 		return props;
 	}
 
