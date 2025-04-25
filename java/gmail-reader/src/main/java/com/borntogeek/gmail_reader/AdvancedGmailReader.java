@@ -99,7 +99,7 @@ public class AdvancedGmailReader {
 	}
 
 	private static SearchTerm getMessagesSearchTerm() {
-		Date yesterdayDate = new Date(new Date().getTime() - (1000 * 60 * 60 * 48));
+		Date yesterdayDate = new Date(new Date().getTime() - (1000 * 60 * 60 * 24));
 		return new ReceivedDateTerm(ComparisonTerm.GT, yesterdayDate);
 	}
 
